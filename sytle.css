@@ -1,0 +1,409 @@
+/* General styles for all devices */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4A261;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: block;
+}
+
+/* Logo Animation */
+.logo h1 {
+    font-size: 2rem;
+    position: relative;
+    animation: move 3s backwards;
+}
+
+@keyframes move {
+    100% {
+        transform: translateX(0px);
+    }
+    0% {
+        transform: translateX(500px);
+    }
+}
+
+.logo {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    height: 3rem;
+    display: flex;
+    color: white;
+    justify-content: flex-end;
+    margin-right: 150px;
+}
+
+.nav-bar p {
+    margin: 0.5rem;
+}
+
+.nav-bar a {
+    color: #740274;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+
+p:hover {
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+/* Sign Section */
+.sign {
+    display: flex;
+    justify-content: space-between;
+    width: 22%;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+button {
+    width: 5rem;
+    height: 2rem;
+    border: none;
+    background-color: rgb(241, 139, 5);
+    border-radius: 0.5rem;
+    color: wheat;
+}
+
+/* Images */
+.item-slide img {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+/* Slide Section */
+.slide-bar {
+    width: 100%;
+    height: 315px;
+    padding-bottom: 25px;
+}
+
+.slide {
+    width: 97%;
+    height: 100%;
+    padding: 20px 20px 10px 20px;
+}
+
+.slide h3 {
+    color: rgb(150, 6, 6);
+    padding-bottom: 5px;
+}
+
+.item-slide {
+    display: flex;
+    margin-top: 5px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.item-slide::-webkit-scrollbar {
+    background-color: transparent;
+    height: 7px;
+    cursor: pointer;
+}
+
+.item-slide::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.item-slide li {
+    list-style: none;
+    margin-right: 14px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* Slider Buttons */
+.l-btn, .r-btn {
+    height: 90px;
+    width: 50px;
+    text-align: center;
+    top: 42%;
+    cursor: pointer;
+    position: absolute;
+    border: 3px solid transparent;
+}
+
+.l-btn {
+    border-radius: 0 10px 10px 0;
+    left: 10px;
+}
+
+.r-btn {
+    border-radius: 10px 0 0 10px;
+    right: 35px;
+}
+
+.l-btn i, .r-btn i {
+    color: rgb(51, 2, 49);
+    position: absolute;
+    font-size: 40px;
+    top: 30px;
+    left: 13%;
+    right: 13%;
+}
+
+.r-btn i:hover, .l-btn i:hover {
+    color: white;
+}
+
+/* Intro Section */
+.intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-right: 5%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+}
+
+.intro .heading {
+    width: 60%;
+}
+
+.stater img {
+    width: 200px;
+    height: 200px;
+}
+
+.intro p {
+    width: 48rem;
+    font-family: cursive;
+    color: rgb(150, 6, 6);
+}
+
+h1.start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h4 {
+    display: flex;
+    align-items: center;
+}
+
+/* Recipe Section */
+.recipe img {
+    height: 300px;
+    width: 350px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.recipe {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+    /* margin-left: 5%; */
+}
+
+.recipe .heading {
+    margin-left: 20px;
+}
+
+.recipe .heading li {
+    color: #8B008B;
+}
+
+.heading p {
+    color: rgb(245, 11, 140);
+    border: none;
+}
+.recipe ul,ol{
+    width: 90%;
+}
+.recipe h2 {
+    color: rgb(78, 124, 126);
+    font-size: 2rem;
+}
+
+.recipe h4 {
+    color: rgb(255, 72, 0);
+}
+
+
+/* Footer Section */
+footer h1 {
+    color: #8B008B;
+}
+
+footer .thanks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    margin: 0px;
+    text-align: center;
+    background-image: linear-gradient(180deg, #ffa65c , #fb8626);
+    padding: 5px;
+}
+.container p:hover{
+border: none;
+}
+.container ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.container a {
+    color: black;
+}
+
+button#back {
+    width: 100%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: darkred;
+    font-weight: 100;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0px;
+}
+
+.connect h1{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: rgb(102, 9, 9);
+}
+
+.connect i{
+    font-size: 3rem;
+    color: rgb(53, 243, 53);
+    text-shadow: 2px 5px green;
+}
+
+footer img {
+    margin-top: 0%;
+    height: 280px;
+}
+
+#back.active {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+ body{
+    padding: 4px;
+ }
+    .logo img{
+    height: 80px;
+    width:80px;
+}
+.photo img{
+    display: none;
+}
+
+.logo h1{
+    font-size: 1.5rem;
+    width: 300px;
+}
+header .nav-bar{
+    width: 100%;
+    text-align: center;
+}
+.slide-bar{
+    display: none;
+}
+.heading h1,p{
+    font-size: 1rem;
+}
+
+.heading p{
+    width: 270px;
+    font-size: .75rem;
+}
+.stater img{
+height: 80px;
+width: 80px;
+}
+
+.recipe ul,ol,h3,h4{
+    width: 270px;
+    font-size: small;
+    
+}
+.start{
+    margin-top: 0px;
+    font-size: 1.25rem;
+    text-align: center;
+}
+.heading h2,
+.connect h1{
+    font-size: 1.25rem;
+}
+h4 .emoji{
+    width: 2rem;
+    margin: auto;
+}
+.thanks{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.thanks img{
+       height: 100px;
+    width: 100px;
+}
+
+.thanks h1{
+    font-size: .75rem;
+    width:210px;
+}
+a #back{
+    height: 20px;
+    font-size: .75rem;
+}
+.container{
+    text-align: center;
+    height: 80px;
+}
+.container p{
+    font-size: .75rem;
+}
+.footer-links a{
+    font-size: .75rem;
+    margin-right: 20px;
+}
+}
