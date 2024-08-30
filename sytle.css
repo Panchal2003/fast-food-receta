@@ -108,7 +108,7 @@ button {
 .slide {
     width: 97%;
     height: 100%;
-    padding: 20px 20px 10px 20px;
+    /* padding: 20px 20px 10px 20px; */
 }
 
 .slide h3 {
@@ -344,8 +344,17 @@ header .nav-bar{
     text-align: center;
 }
 .slide-bar{
+    height: 150px;
+}
+
+.slide img{
+    height: 50px;
+    width: 50px;
+}
+.l-btn,.r-btn{
     display: none;
 }
+
 .heading h1,p{
     font-size: 1rem;
 }
@@ -360,9 +369,12 @@ width: 80px;
 }
 
 .recipe ul,ol,h3,h4{
-    width: 270px;
+    width: 260px;
     font-size: small;
     
+}
+.recipe li{
+    margin-right: 25px;
 }
 .start{
     margin-top: 0px;
@@ -386,7 +398,9 @@ h4 .emoji{
        height: 100px;
     width: 100px;
 }
-
+.connect i{
+    margin-right:20px;
+}
 .thanks h1{
     font-size: .75rem;
     width:210px;
