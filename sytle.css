@@ -348,6 +348,7 @@ header .nav-bar{
 }
 .slide h3{
     font-size: 1.25rem;
+    width:290px;
 }
 .slide img{
     height: 50px;
